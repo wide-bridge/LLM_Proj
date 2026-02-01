@@ -1,15 +1,18 @@
-# 강아지 오줌 pH 분석 챗봇
+### 변려견 소변 pH 분석 챗봇
 
 EfficientNet 모델을 사용하여 강아지 오줌의 pH 값을 분석하고, OpenAI API를 통해 건강 관리 조언을 제공하는 웹 챗봇입니다.
 
-## 주요 기능
+#### 주요 기능
 
 - 🖼️ **이미지 업로드**: 강아지 오줌 이미지를 업로드하여 pH 값 분석
 - 📊 **pH 분류**: 7개 클래스 (pH 4~10) 분류 및 신뢰도 표시
 - 💡 **건강 조언**: OpenAI API를 통한 맞춤형 건강 관리 방법 제공
-- 🎨 **직관적인 UI**: 현대적이고 사용하기 쉬운 웹 인터페이스
+- 🎨 **간단한 UI**: 간단한 웹 인터페이스
 
-## 프로젝트 구조
+  <img width="447" height="928" alt="image" src="https://github.com/user-attachments/assets/ca68d55f-537f-4b10-a3d8-aa4d437ae5a4" />
+
+
+#### 프로젝트 구조
 
 ```
 Paw_agent/
@@ -29,15 +32,15 @@ Paw_agent/
 └── datasets/              # 데이터셋
 ```
 
-## 설치 및 실행
+### 설치 및 실행
 
-### 1. 의존성 설치
+#### 1. 의존성 설치
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 2. 환경 변수 설정
+#### 2. 환경 변수 설정
 
 `.env` 파일은 다음 경로에 있어야 합니다:
 ```
@@ -49,7 +52,7 @@ D:\PyProject\DocTalk\Derma_AI\Face_Derma_Proj\.env
 OPENAI_API_KEY=your_openai_api_key_here
 ```
 
-### 3. 애플리케이션 실행
+#### 3. 애플리케이션 실행
 
 ```bash
 python run.py
@@ -60,7 +63,7 @@ python run.py
 uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
 ```
 
-### 4. 웹 브라우저에서 접속
+#### 4. 웹 브라우저에서 접속
 
 ```
 http://localhost:8000
@@ -71,15 +74,15 @@ API 문서는 다음에서 확인할 수 있습니다:
 http://localhost:8000/docs
 ```
 
-## 사용 방법
+### 사용 방법
 
 1. 웹 브라우저에서 `http://localhost:8000` 접속
 2. 이미지 업로드 영역에 강아지 오줌 이미지 업로드 (드래그 앤 드롭 또는 클릭)
 3. 자동으로 pH 값 분석 및 건강 조언 확인
 
-## API 엔드포인트
+### API 엔드포인트
 
-### POST `/api/predict`
+#### POST `/api/predict`
 이미지를 업로드하여 pH 값을 예측합니다.
 
 **요청:**
@@ -101,20 +104,20 @@ http://localhost:8000/docs
 }
 ```
 
-### GET `/api/health`
+#### GET `/api/health`
 서비스 상태를 확인합니다.
 
-## 기술 스택
+### 기술 스택
 
 - **Backend**: FastAPI, Python
 - **ML Model**: PyTorch, EfficientNet V2 Small
 - **AI**: OpenAI GPT-3.5 Turbo
 - **Frontend**: HTML, CSS, JavaScript (Vanilla)
 
-## 주의사항
+### 주의사항
 
 ⚠️ 이 서비스는 참고용입니다. 정확한 진단은 수의사와 상담하세요.
 
-## 라이선스
+### 라이선스
 
 MIT License
