@@ -1,4 +1,4 @@
-### 변려견 소변 pH 분석 챗봇
+### 반려견 소변 분석(pH) 설명 챗봇
 
 EfficientNet 모델을 사용하여 강아지 오줌의 pH 값을 분석하고, OpenAI API를 통해 건강 관리 조언을 제공하는 웹 챗봇입니다.
 
@@ -8,6 +8,7 @@ EfficientNet 모델을 사용하여 강아지 오줌의 pH 값을 분석하고, 
 - 📊 **pH 분류**: 7개 클래스 (pH 4~10) 분류 및 신뢰도 표시
 - 💡 **건강 조언**: OpenAI API를 통한 맞춤형 건강 관리 방법 제공
 - 🎨 **간단한 UI**: 간단한 웹 인터페이스
+- Backend: FastAPI 
 
   <img width="447" height="928" alt="image" src="https://github.com/user-attachments/assets/ca68d55f-537f-4b10-a3d8-aa4d437ae5a4" />
 
